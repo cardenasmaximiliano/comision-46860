@@ -1,0 +1,34 @@
+header{
+    background-color: yellow;
+}
+section{
+    background-color: lightblue;
+}
+
+.seccionPrincipal{
+    background-color: lightcoral;
+}
+.seccionPrincipal p{
+    text-align: center;
+}
+
+.header-login{
+    background-color: lightgray;
+}
+
+#color{
+    background-color: lightcyan;
+}
+
+
+/* .seccionPrincipal{
+    background-color: lightcoral;
+}
+.seccionPrincipal{
+    background-color: rgb(219, 240, 128);
+}
+.seccionPrincipal{
+    background-color: rgb(128, 210, 240);
+} */
+
+
