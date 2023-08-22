@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;600&family=Tilt+Prism&display=swap');
+/*
+SELECTOR (ETIQUETA, CLASS, ID){
+    PROPIEDAD: VALOR;
+    PROPIEDAD2: VALOR2;
+    PROPIEDAD3: VALOR3;
+}
+**/
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+/**
+colores
+
+tipografias
+font-family: 'Roboto Mono', monospace;
+font-family: 'Tilt Prism', cursive;
+
+
+*/
+
+
+/* 
+p{
+    color: red;
+}
+
+section p{
+    color: blue;
+}
+
+section div p{
+    color: yellow;
+    background-color: black;
+}
+
+section div p span{
+    color: red;
+}
+section div p span{
+    color: rgb(0, 255, 242);
+}
+
+section{
+    background-color: lightcyan;
+}
+
+/**una clase se llama con un punto por delante del nombre*/
+/*
+.sectionDeAlondra{
+    background-color: beige;
+}
+
+.sectionDeSantino{
+    background-color: blueviolet;
+}
+
+.sectionDeSantino p{
+    color: white;
+} */
+/*
+    cuando creamos clases estas tienen que tener
+    un significado, tienen que ser especificas a la hora de nombrar propiedades
+
+    camelCase: sectionUnoPrueba
+    kebab: section-uno-prueba
+    snake_case: section_uno_prueba
+    BEM: bloque elemento modificador
+*/
+
+/*****************  codigo css de index  *****************/
+
+/*clases del index.html*/
+/**clases de la navbar**/
+header{
+    background-color: lightblue;
+}
+
+.navbar{
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+
+/* clases de las cards**/
+.sectionIndexTres{
+    background-color: antiquewhite;
+}
+
+.sectionIndexTres h2{
+    text-align: center;
+    text-decoration: overline;
+    text-transform: capitalize;
+    letter-spacing: 20px;
+    font-family: 'Tilt Prism', cursive;
+}
+.cardsGeneral div h3{
+    word-spacing: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+}
+.cardsGeneral div p{
+    text-indent: 20px;
+    word-spacing: 12px;
+    text-transform: lowercase;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/*****************  codigo css de contactos  *****************/
