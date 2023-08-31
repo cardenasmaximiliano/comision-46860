@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr; /***grids puede solamente declarar 12 columnas***/
+    grid-template-rows: 10% auto 5% ; /***grids puede declarar la cantidad de filas que yo quiera****/
+    grid-template-areas: 
+    "cris cris cris"
+    "main main main"
+    "footer footer footer"
+    ;
+
+}
+
+header{
+    background-color: lightcoral;
+    grid-area: cris;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    
+}
+main{
+    background-color: lightblue;
+    grid-area: main;
+    display: grid;
+    width: 100%;
+   ;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8,auto);
+    /* gap: 7px; */
+    row-gap: .625rem;
+    column-gap: .9375rem;
+    /* justify-items: center;
+    align-items: center; */
+    /* justify-content: end;
+    align-content: end; */
+}
+.section-1{
+    background-color: red;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.section-2{
+    background-color:blue;
+    grid-column: 5 / 8;
+    grid-row: 2 / 7;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.section-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-3{
+    background-color:green ;
+    grid-row: 3 / 8;
+    grid-column: 2 / 5;
+    width: 100%;
+    
+    overflow: hidden;
+}
+.section-3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-4{
+    background-color: yellow;
+    grid-column: 5/ 8;
+    grid-row: 7 / 8;
+    width: 100%;
+    height: 100%;
+}
+.section-4 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+footer{
+    background-color: lightgoldenrodyellow;
+    grid-area: footer;
+}
+
+
+/**grids**/
+
+.grid-2{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: repeat(2,200px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.p-1{
+    background-color: lightblue;
+    justify-self: end;
+    align-self: end;
+}
